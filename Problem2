@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int daya[6],dayb[6],dayc[6],a,b,c,d,e,f;
+	cout<<"Enter all temperature for a week of Province A, Province B and then Province C\n";
+	for(a=1;a<=7;a++)
+	{
+		cout<<"Province A, Day "<<a<<":";
+	cin>>daya[a];
+	}
+		for(a=1;a<=7;a++)
+	{
+		cout<<"Province B, Day "<<a<<":";
+	cin>>dayb[a];
+	}
+		for(a=1;a<=7;a++)
+	{
+		cout<<"Province C, Day "<<a<<":";
+	cin>>dayc[a];
+	}
+	cout<<endl<<endl;
+		for (a=1;a<=7;a++)
+	{
+		cout<<"Province A, Day "<<a<<": "<<daya[a]<<endl;
+	}
+		for(a=1;a<=7;a++)
+	{
+	cout<<"Province B, Day "<<a<<": "<<dayb[a]<<endl;
+	}
+		for(a=1;a<=7;a++)
+	{
+	cout<<"Province C, Day "<<a<<": "<<dayc[a]<<endl;
+	}	
+	
+	return 0;
+}
