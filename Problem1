@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int arr[9],a,d,g;
+	float b,c,e,f;
+	cout<<"Input 10 integers and it will show the smallest and largest interger, total, and average.\n";
+	b=0;
+	for (a=0;a<10;a++)
+	{
+		cin>>arr[a];
+		cout<< arr[a]<<", ";
+		b=b+arr[a];
+	}
+	cout<<"\nThe total is: "<<b;
+	c=b/10;
+	cout<<"\nThe average is: "<<c;
+	for (a=1;a<10;a++)
+	{
+		if(arr[d]<arr[a])
+		d=a;
+	}
+	e = arr[d];
+	cout<<"\nthe largest number is "<<e;
+	for (a=1;a<10;a++)
+	{
+		if(arr[d]>arr[a])
+		d=a;
+	}
+	f = arr[d];
+	cout<<"\nthe smallest number is "<<f;
+	return 0;
+}
