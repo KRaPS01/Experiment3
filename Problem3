@@ -2,33 +2,33 @@
 using namespace std;
 int main()
 {
-	int a,b,c,d;
-	char array[60];
-	cout<<"Enter the size of the array: ";
-	cin>>a;
-	cout<<endl;
-	for(b=0;b<a;b++)
+int a,b,c,d;
+char array[60];
+cout<<"Enter the size of the array: ";
+cin>>a;
+cout<<endl;
+for(b=0;b<a;b++)
+{
+cout<<"Enter the elements";
+cin>>array[b];
+}
+for(b=0;b<a;b++)
+{		
+	for(c=b+1;c<a;c++)
 	{
-		cout<<"Enter the elements";
-		cin>>array[b];
-	}
-	for(b=0;b<a;b++)
-	{		
-		for(c=b+1;c<a;c++)
+		if(array[b]>array[c])
 		{
-			if(array[b]>array[c])
-			{
-				d=array[b];
-				array[b]=array[c];
-				array[c]=d;
-			}
+			d=array[b];
+			array[b]=array[c];
+			array[c]=d;
 		}
 	}
-	cout<<"\nElements in ascending order: \n";
-	for(b=0;b<a;b++)
-	{
-	cout<<array[b]<<" ";
-	}
-	cout<<"\nArray Size: "<< a;
-	return 0;
+}
+cout<<"\nElements in ascending order: \n";
+for(b=0;b<a;b++)
+{
+cout<<array[b]<<" ";
+}
+cout<<"\nArray Size: "<< a;
+return 0;
 }
